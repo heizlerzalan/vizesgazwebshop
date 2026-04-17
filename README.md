@@ -1,6 +1,6 @@
 # vizesgazwebshop
-*main page
-*own brand
-*kapcsolatok
-*kosár
-*brand bemutató
+##main page
+##own brand
+##kapcsolatok
+##kosár
+##brand bemutató
