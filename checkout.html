@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="npfey@gmail.com">
+        </div>
+        <div class="col-12">
+            <label for="inputbank" class="form-label">számlaszám</label>
+            <input type="text" class="form-control" id="inputbank" placeholder="12345678-12345678-12345678">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">utca, házszám</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Kossuth Lajos utca 4.">
+        </div>
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label">város</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Budapest">
+        </div>
+        <div class="col-md-4">
+            <label for="inputState" class="form-label">megye</label>
+            <select id="inputState" class="form-select">
+                <option selected>Válassz</option>
+                <option value="Budapest">Budapest</option>
+                <option value="Baranya">Baranya</option>
+                <option value="Bács-Kiskun">Bács-Kiskun</option>
+                <option value="Békés">Békés</option>
+                <option value="Borsod-Abaúj-Zemplén">Borsod-Abaúj-Zemplén</option>
+                <option value="Csongrád-Csanád">Csongrád-Csanád</option>
+                <option value="Fejér">Fejér</option>
+                <option value="Győr-Moson-Sopron">Győr-Moson-Sopron</option>
+                <option value="Hajdú-Bihar">Hajdú-Bihar</option>
+                <option value="Heves">Heves</option>
+                <option value="Jász-Nagykun-Szolnok">Jász-Nagykun-Szolnok</option>
+                <option value="Komárom-Esztergom">Komárom-Esztergom</option>
+                <option value="Nógrád">Nógrád</option>
+                <option value="Pest">Pest</option>
+                <option value="Somogy">Somogy</option>
+                <option value="Szabolcs-Szatmár-Bereg">Szabolcs-Szatmár-Bereg</option>
+                <option value="Tolna">Tolna</option>
+                <option value="Vas">Vas</option>
+                <option value="Veszprém">Veszprém</option>
+                <option value="Zala">Zala</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label for="inputZip" class="form-label">irányítószám</label>
+            <input type="text" class="form-control" id="inputZip" placeholder="1234">
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Elfogadom a vásárlási feltételeket
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" id="order">Megrendelés</button>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="kosar.js"></script>
+</body>
+
+</html>
