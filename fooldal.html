@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="logo.png"><img src="logo.png" alt="Logo" width="60vw" alt="logo"></a>
+            <a class="navbar-brand" href="logo.png"><img src="logo.png" alt="Logo" width="60vw"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,47 +41,111 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="kosar.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708" />
-                            </svg></a>
+                        <a class="nav-link" href="kosar.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708" />
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="card" style="width: 18rem;">
-        <img src="npfey3000bojler.png" class="card-img-top" alt="termekkep">
-        <div class="card-body">
-            <h5 class="card-title">npfey 3000 bojler</h5>
-            <p class="card-text">ár: 500000<br>80 literes</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#npfey-3000-bojler">
-                Bővebben
-            </button>
-            <div class="modal fade" id="npfey-3000-bojler" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">npfey 3000 bojler</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                            </button>
+
+    <div class="row my-4">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img src="npfey3000bojler.png" class="card-img-top" alt="termekkep" style="width: 13vw; height: 20vw;">
+            <div class="card-body">
+                <h5 class="card-title">npfey 3000 bojler</h5>
+                <p class="card-text">ár: <span id="price3000npfey">500000</span> Ft</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#npfey-3000-bojler">
+                    Bővebben
+                </button>
+                <div class="modal fade" id="npfey-3000-bojler" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">npfey 3000 bojler</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="npfey3000bojler.png" class="card-img-top" style="width: 13vw; height: 20vw;"><br>
+                                ár: 500000 Ft<br>
+                                80 literes | 5 év garancia
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vissza</button>
+                                <button type="button" id="npfey-3000-bojlerbutton" class="btn btn-primary">Kosárba</button>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            ár: 500000<br>
-                            80 literes<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mx-auto" style="width: 18rem;">
+            <img src="npfeyluxury.png" class="card-img-top" alt="termekkep" style="width: 13vw; height: 20vw;">
+            <div class="card-body">
+                <h5 class="card-title">npfey luxury bojler</h5>
+                <p class="card-text">ár: <span id="priceluxurynpfey">300000</span> Ft</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#npfey-luxury-bojler">
+                    Bővebben
+                </button>
+                <div class="modal fade" id="npfey-luxury-bojler" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">npfey luxury bojler</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="npfeyluxury.png" class="card-img-top" style="width: 13vw; height: 20vw;"><br>
+                                ár: 300000 Ft<br>
+                                60 literes | 3 év garancia
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vissza</button>
+                                <button type="button" id="npfey-luxury-bojlerbutton" class="btn btn-primary">Kosárba</button>
+                            </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vissza</button>
-                            <button type="button" class="btn btn-primary">Kosárba</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mx-auto" style="width: 18rem;">
+            <img src="npfeymini.png" class="card-img-top" alt="termekkep" style="width: 13vw; height: 20vw;">
+            <div class="card-body">
+                <h5 class="card-title">npfey mini bojler</h5>
+                <p class="card-text">ár: <span id="pricemininpfey">70000</span> Ft</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#npfey-mini-bojler">
+                    Bővebben
+                </button>
+                <div class="modal fade" id="npfey-mini-bojler" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">npfey mini bojler</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="npfeymini.png" class="card-img-top" style="width: 13vw; height: 20vw;"><br>
+                                ár: 70000 Ft<br>
+                                30 literes | 2 év garancia
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vissza</button>
+                                <button type="button" id="npfey-mini-bojlerbutton" class="btn btn-primary">Kosárba</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="kosar.js"></script>
 </body>
 
 </html>
