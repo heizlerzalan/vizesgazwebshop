@@ -24,3 +24,7 @@
     transform: translateY(-3px);
     color: #fff;
 }
+
+body {
+    background-color: #88aadd;
+}
