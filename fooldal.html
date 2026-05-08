@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="logo.png"><img src="logo.png" alt="Logo" width="60vw"></a>
+            <a class="navbar-brand" href="img/logo.png"><img src="img/logo.png" alt="Logo" width="60vw"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,15 +35,17 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#bojler">Bojler</a></li>
-                            <li><a class="dropdown-item" href="#">szelepek és csapok</a></li>
-                            <li><a class="dropdown-item" href="#">réz alkatrészek</a></li>
-                            <li><a class="dropdown-item" href="#">szerszámok</a></li>
+                            <li><a class="dropdown-item" href="#radiator">Radiátorok</a></li>
+                            <li><a class="dropdown-item" href="#alkatreszek">Alkatrészek</a></li>
+                            <li><a class="dropdown-item" href="#szerszamok">Szerszámok</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="kosar.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708" />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708" />
                             </svg>
                         </a>
                     </li>
@@ -51,91 +53,415 @@
             </div>
         </div>
     </nav>
+    <div class="bojler" id="bojler">
+        <h1 class="text-center my-4">Bojler ajánlatok</h1>
+        <div class="row my-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/npfey3000bojler.png" class="card-img-top" alt="termekkep"
+                    style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">npfey 3000 bojler</h5>
+                    <p class="card-text">ár: <span id="price3000npfey">500000</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#npfey-3000-bojler">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="npfey-3000-bojler" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">npfey 3000 bojler</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/npfey3000bojler.png" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: 500000 Ft<br>
+                                    120 literes | 5 év garancia
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="npfey-3000-bojlerbutton"
+                                        class="btn btn-primary">Kosárba</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <div class="row my-4">
-        <div class="card mx-auto" style="width: 18rem;">
-            <img src="npfey3000bojler.png" class="card-img-top" alt="termekkep" style="width: 13vw; height: 20vw;">
-            <div class="card-body">
-                <h5 class="card-title">npfey 3000 bojler</h5>
-                <p class="card-text">ár: <span id="price3000npfey">500000</span> Ft</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#npfey-3000-bojler">
-                    Bővebben
-                </button>
-                <div class="modal fade" id="npfey-3000-bojler" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">npfey 3000 bojler</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/npfeyluxury.png" class="card-img-top" alt="termekkep" style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">npfey luxury bojler</h5>
+                    <p class="card-text">ár: <span id="priceluxurynpfey">30000</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#npfey-luxury-bojler">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="npfey-luxury-bojler" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">npfey luxury bojler</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/npfeyluxury.png" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: 30000 Ft<br>
+                                    150 literes | 3 év garancia
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="npfey-luxury-bojlerbutton"
+                                        class="btn btn-primary">Kosárba</button>
+                                </div>
                             </div>
-                            <div class="modal-body">
-                                <img src="npfey3000bojler.png" class="card-img-top" style="width: 13vw; height: 20vw;"><br>
-                                ár: 500000 Ft<br>
-                                80 literes | 5 év garancia
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/npfeymini.png" class="card-img-top" alt="termekkep" style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">npfey mini bojler</h5>
+                    <p class="card-text">ár: <span id="pricemininpfey">70000</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#npfey-mini-bojler">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="npfey-mini-bojler" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">npfey mini bojler</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/npfeymini.png" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: 70000 Ft<br>
+                                    60 literes | 2 év garancia
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="npfey-mini-bojlerbutton"
+                                        class="btn btn-primary">Kosárba</button>
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vissza</button>
-                                <button type="button" id="npfey-3000-bojlerbutton" class="btn btn-primary">Kosárba</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/npfeyextracool.png" class="card-img-top" alt="termekkep"
+                    style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">npfey extra cool</h5>
+                    <p class="card-text">ár: <span id="priceextracoolnpfey">250000</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#npfey-extracool-bojler">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="npfey-extracool-bojler" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">npfey extra cool</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/npfeyextracool.png" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: 250000 Ft<br>
+                                    140 literes | 4 év garancia
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="npfey-extracool-bojlerbutton"
+                                        class="btn btn-primary">Kosárba</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row my-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/npfey30.png" class="card-img-top" alt="termekkep" style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">npfey 30 bojler</h5>
+                    <p class="card-text">ár: <span id="price30npfey">10000</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#npfey-30-bojler">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="npfey-30-bojler" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">npfey 30 bojler</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/npfey30.png" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: 10000 Ft<br>
+                                    135 literes | 2 év garancia
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="npfey-30-bojlerbutton"
+                                        class="btn btn-primary">Kosárba</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="card mx-auto" style="width: 18rem;">
-            <img src="npfeyluxury.png" class="card-img-top" alt="termekkep" style="width: 13vw; height: 20vw;">
-            <div class="card-body">
-                <h5 class="card-title">npfey luxury bojler</h5>
-                <p class="card-text">ár: <span id="priceluxurynpfey">300000</span> Ft</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#npfey-luxury-bojler">
-                    Bővebben
-                </button>
-                <div class="modal fade" id="npfey-luxury-bojler" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">npfey luxury bojler</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/npfeytankbojler.png" class="card-img-top" alt="termekkep"
+                    style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">npfey tank bojler</h5>
+                    <p class="card-text">ár: <span id="pricetanknpfey">45000</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#npfey-tank-bojler">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="npfey-tank-bojler" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">npfey tank bojler</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/npfeytankbojler.png" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: 45000 Ft<br>
+                                    200 literes | 5 év garancia
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="npfey-tank-bojlerbutton"
+                                        class="btn btn-primary">Kosárba</button>
+                                </div>
                             </div>
-                            <div class="modal-body">
-                                <img src="npfeyluxury.png" class="card-img-top" style="width: 13vw; height: 20vw;"><br>
-                                ár: 300000 Ft<br>
-                                60 literes | 3 év garancia
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/hajduz120bojler.jpg" class="card-img-top" alt="termekkep"
+                    style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">hajdu z120 bojler</h5>
+                    <p class="card-text">ár: <span id="pricehajduz120npfey">146650</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#hajdu-z120-bojler">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="hajdu-z120-bojler" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">hajdu z120 bojler</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/hajduz120bojler.jpg" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: 146650 Ft<br>
+                                    120 literes | 2 év garancia
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="hajdu-z120-bojlerbutton"
+                                        class="btn btn-primary">Kosárba</button>
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vissza</button>
-                                <button type="button" id="npfey-luxury-bojlerbutton" class="btn btn-primary">Kosárba</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/hajduzv120bojler.jpg" class="card-img-top" alt="termekkep"
+                    style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">hajdu zv120 bojler</h5>
+                    <p class="card-text">ár: <span id="pricezv120hajdu">250000</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#hajdu-zv120-bojler">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="hajdu-zv120-bojler" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">hajdu zv120 bojler</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/hajduzv120bojler.jpg" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: 183190 Ft<br>
+                                    120 literes | 4 év garancia
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="hajdu-zv120-bojlerbutton"
+                                        class="btn btn-primary">Kosárba</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row my-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/xxxxxxxxxxxxxxxx.png" class="card-img-top" alt="termekkep"
+                    style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">xxxxxxxxxxxxxxxx</h5>
+                    <p class="card-text">ár: <span id="xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#xxxxxxxxxxxxxxxx">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="xxxxxxxxxxxxxxxx" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">xxxxxxxxxxxxxxxx</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/xxxxxxxxxxxxxxxx.png" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: xxxxxxxxxxxxxxxx Ft<br>
+                                    xxxxxxxxxxxxxxxx
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="xxxxxxxxxxxxxxxx" class="btn btn-primary">Kosárba</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="card mx-auto" style="width: 18rem;">
-            <img src="npfeymini.png" class="card-img-top" alt="termekkep" style="width: 13vw; height: 20vw;">
-            <div class="card-body">
-                <h5 class="card-title">npfey mini bojler</h5>
-                <p class="card-text">ár: <span id="pricemininpfey">70000</span> Ft</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#npfey-mini-bojler">
-                    Bővebben
-                </button>
-                <div class="modal fade" id="npfey-mini-bojler" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">npfey mini bojler</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/xxxxxxxxxxxxxxxx.png" class="card-img-top" alt="termekkep"
+                    style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">xxxxxxxxxxxxxxxx</h5>
+                    <p class="card-text">ár: <span id="xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#xxxxxxxxxxxxxxxx">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="xxxxxxxxxxxxxxxx" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">xxxxxxxxxxxxxxxx</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/xxxxxxxxxxxxxxxx.png" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: xxxxxxxxxxxxxxxx Ft<br>
+                                    xxxxxxxxxxxxxxxx
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="xxxxxxxxxxxxxxxx" class="btn btn-primary">Kosárba</button>
+                                </div>
                             </div>
-                            <div class="modal-body">
-                                <img src="npfeymini.png" class="card-img-top" style="width: 13vw; height: 20vw;"><br>
-                                ár: 70000 Ft<br>
-                                30 literes | 2 év garancia
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/xxxxxxxxxxxxxxxx.jpg" class="card-img-top" alt="termekkep"
+                    style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">xxxxxxxxxxxxxxxx</h5>
+                    <p class="card-text">ár: <span id="xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#xxxxxxxxxxxxxxxx">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="xxxxxxxxxxxxxxxx" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">xxxxxxxxxxxxxxxx</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/xxxxxxxxxxxxxxxx.jpg" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: xxxxxxxxxxxxxxxx Ft<br>
+                                    xxxxxxxxxxxxxxxx
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="xxxxxxxxxxxxxxxx" class="btn btn-primary">Kosárba</button>
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Vissza</button>
-                                <button type="button" id="npfey-mini-bojlerbutton" class="btn btn-primary">Kosárba</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/xxxxxxxxxxxxxxxx.jpg" class="card-img-top" alt="termekkep"
+                    style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">xxxxxxxxxxxxxxxx</h5>
+                    <p class="card-text">ár: <span id="xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#xxxxxxxxxxxxxxxx">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="xxxxxxxxxxxxxxxx" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">xxxxxxxxxxxxxxxx</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/xxxxxxxxxxxxxxxx.jpg" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: xxxxxxxxxxxxxxxx Ft<br>
+                                    xxxxxxxxxxxxxxxx
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="xxxxxxxxxxxxxxxx" class="btn btn-primary">Kosárba</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -143,7 +469,187 @@
             </div>
         </div>
     </div>
+    <div class="radiator" id="radiator">
+        <h1 class="text-center my-4">Radiátor ajánlatok</h1>
+        <div class="row my-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/npfey3000radiator.png" class="card-img-top" alt="termekkep"
+                    style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">npfey 3000 radiator</h5>
+                    <p class="card-text">ár: <span id="price3000npfey">1000005</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#npfey-3000-radiator">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="npfey-3000-radiator" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">npfey 3000 radiator</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/npfey3000radiator.png" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: 1000005 Ft<br>
+                                    1500 W | 5 év garancia
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="npfey-3000-radiatorbutton"
+                                        class="btn btn-primary">Kosárba</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/AeroFlowMiniProWifi.png" class="card-img-top" alt="termekkep" style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">AeroFlow Mini Pro Wifi</h5>
+                    <p class="card-text">ár: <span id="priceAeroFlowMiniProWifi">188990</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#AeroFlow-Mini-Pro-Wifi">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="AeroFlow-Mini-Pro-Wifi" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">AeroFlow Mini Pro Wifi</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/AeroFlowMiniProWifi.png" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: 188990 Ft<br>
+                                    650 W | 2 év garancia
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="AeroFlow-Mini-Pro-Wifibutton"
+                                        class="btn btn-primary">Kosárba</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/npfeygamingradiator.png" class="card-img-top" alt="termekkep" style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">npfey gaming radiator</h5>
+                    <p class="card-text">ár: <span id="pricemininpfey">200000</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#npfey-gaming-radiator">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="npfey-gaming-radiator" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">npfey gaming radiator</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/npfeygamingradiator.png" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: 200000 Ft<br>
+                                    60 literes | 2 év garancia
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="npfey-gaming-radiatorbutton"
+                                        class="btn btn-primary">Kosárba</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/npfeygamingradiatormk2.png" class="card-img-top" alt="termekkep"
+                    style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">npfey gaming radiator mk2</h5>
+                    <p class="card-text">ár: <span id="pricegamingradiatormk2npfey">2500000</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#npfey-gaming-radiator-mk2">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="npfey-gaming-radiator-mk2" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">npfey gaming radiator mk2</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/npfeygamingradiator mk2.png" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: 2500000 Ft<br>
+                                    140 literes | 4 év garancia
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="npfey-gaming-radiator-mk2button"
+                                        class="btn btn-primary">Kosárba</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alkatreszek" id="alkatreszek">
+        <h1 class="text-center my-4">Alkatrész ajánlatok</h1>
+        <div class="card mx-auto" style="width: 18rem;">
+                <img src="img/hollandi.webp" class="card-img-top" alt="termekkep"
+                    style="width: 13vw; height: 20vw;">
+                <div class="card-body">
+                    <h5 class="card-title">hollandi 5/4"</h5>
+                    <p class="card-text">ár: <span id="price3000npfey">1000</span> Ft</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#hollandi-54">
+                        Bővebben
+                    </button>
+                    <div class="modal fade" id="hollandi-54" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">hollandi 5/4"</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="img/hollandi.webp" class="card-img-top"
+                                        style="width: 13vw; height: 20vw;"><br>
+                                    ár: 1000005 Ft<br>
+                                    5/4"
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Vissza</button>
+                                    <button type="button" id="hollandibutton"
+                                        class="btn btn-primary">Kosárba</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="szerszamok" id="szerszamok">
+        <h1 class="text-center my-4">Szerszám ajánlatok</h1>    
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="kosar.js"></script>
 </body>

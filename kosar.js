@@ -1,4 +1,3 @@
-
 let termekszam = parseInt(sessionStorage.getItem("termekszam")) || 0;
 let amount = parseInt(sessionStorage.getItem("amount")) || 0;
 
@@ -45,6 +44,57 @@ document.addEventListener("DOMContentLoaded", () => {
     if (btnMini) {
         btnMini.onclick = () => {
             const price = Number(document.getElementById("pricemininpfey").innerText);
+            addToCart(price);
+        };
+    }
+    const btnExtraCool = document.getElementById("npfey-extracool-bojlerbutton");
+    if (btnExtraCool) {
+        btnExtraCool.onclick = () => {
+            const price = Number(document.getElementById("priceextracoolnpfey").innerText);
+            addToCart(price);
+        };
+    }
+    const btnpfey30 = document.getElementById("npfey-30-bojlerbutton");
+    if (btnpfey30) {
+        btnpfey30.onclick = () => {
+            const price = Number(document.getElementById("price30npfey").innerText);
+            addToCart(price);
+        };
+    }
+    const btntank = document.getElementById("npfey-tank-bojlerbutton");
+    if (btntank) {
+        btntank.onclick = () => {
+            const price = Number(document.getElementById("pricetanknpfey").innerText);
+            addToCart(price);
+        };
+    }
+    const btnhajduz120 = document.getElementById("hajdu-z120-bojlerbutton");
+    if (btnhajduz120) {
+        btnhajduz120.onclick = () => {
+            const price = Number(document.getElementById("pricehajduz120npfey").innerText);
+            addToCart(price);
+        };
+    }
+    const btnhajduzv120 = document.getElementById("hajdu-zv120-bojlerbutton");
+    if (btnhajduzv120) {
+        btnhajduzv120.onclick = () => {
+            const price = Number(document.getElementById("pricezv120hajdu").innerText);
+            addToCart(price);
+        };
+    }
+
+    const btnAeroFlowMiniProWifi = document.getElementById("AeroFlow-Mini-Pro-Wifibutton");
+    if (btnAeroFlowMiniProWifi) {
+        btnAeroFlowMiniProWifi.onclick = () => {
+            const price = Number(document.getElementById("priceAeroFlowMiniProWifi").innerText);
+            addToCart(price);
+        };
+    }
+
+    const btnNpfey3000Radiator = document.getElementById("npfey-3000-radiatorbutton");
+    if (btnNpfey3000Radiator) {
+        btnNpfey3000Radiator.onclick = () => {
+            const price = Number(document.getElementById("price3000radiatornpfey").innerText);
             addToCart(price);
         };
     }
