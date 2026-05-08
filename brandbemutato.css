@@ -91,3 +91,14 @@ body {
 main {
     flex: 1;
 }
+
+.sor {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sor img {
+  width: 500px;
+  height: auto;
+}
