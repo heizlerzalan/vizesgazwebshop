@@ -75,3 +75,19 @@ body {
   font-size: 0.9rem;
   line-height: 1.5;
 }
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
