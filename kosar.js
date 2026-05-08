@@ -1,14 +1,14 @@
 
-let termekszam = parseInt(localStorage.getItem("termekszam")) || 0;
-let amount = parseInt(localStorage.getItem("amount")) || 0;
+let termekszam = parseInt(sessionStorage.getItem("termekszam")) || 0;
+let amount = parseInt(sessionStorage.getItem("amount")) || 0;
 
 
 function addToCart(price) {
     termekszam += 1;
     amount += price;
 
-    localStorage.setItem("termekszam", termekszam);
-    localStorage.setItem("amount", amount);
+    sessionStorage.setItem("termekszam", termekszam);
+    sessionStorage.setItem("amount", amount);
 
     alert("Termék hozzáadva a kosárhoz!");
     updateUI();
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (orderBtn) {
         orderBtn.onclick = () => {
             alert("Köszönjük a vásárlást!");
-            localStorage.clear();
+            sessionStorage.clear();
             window.location.href = "fooldal.html";
         };
     }
