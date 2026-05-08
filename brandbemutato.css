@@ -32,7 +32,7 @@ body {
 .card-container {
   display: flex;
   justify-content: center;
-  gap: 20px; 
+  gap: 250px; 
   padding: 20px;
   flex-wrap: wrap; 
   font-family: sans-serif;
