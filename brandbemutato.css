@@ -96,6 +96,7 @@ main {
   display: flex;
   align-items: center;
   gap: 15px;
+  background-color: rgb(241, 251, 255);
 }
 
 .sor img {
