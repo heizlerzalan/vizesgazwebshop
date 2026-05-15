@@ -98,6 +98,45 @@ document.addEventListener("DOMContentLoaded", () => {
             addToCart(price);
         };
     }
+    const btnNpfeyGamingRadiator = document.getElementById("npfey-gaming-radiatorbutton");
+    if (btnNpfeyGamingRadiator) {
+        btnNpfeyGamingRadiator.onclick = () => {
+            const price = Number(document.getElementById("pricegamingradiatornpfey").innerText);
+            addToCart(price);
+        };
+    }
+
+    const btnNpfeyGamingRadiatorMk2 = document.getElementById("npfey-gaming-radiator-mk2button");
+    if (btnNpfeyGamingRadiatorMk2) {
+        btnNpfeyGamingRadiatorMk2.onclick = () => {
+            const price = Number(document.getElementById("pricegamingradiatormk2npfey").innerText);
+            addToCart(price);
+        };
+    }
+
+        const btnHollandi = document.getElementById("hollandibutton");
+        if (btnHollandi) {
+            btnHollandi.onclick = () => {
+                const price = Number(document.getElementById("price3000npfey").innerText);
+                addToCart(price);
+            };
+        }
+
+        const btnTomito = document.getElementById("tomitobutton");
+        if (btnTomito) {
+            btnTomito.onclick = () => {
+                const price = Number(document.getElementById("price3000npfey").innerText);
+                addToCart(price);
+            };
+        }
+
+        const btnGomboscsap = document.getElementById("gomboscsapbutton");
+        if (btnGomboscsap) {
+            btnGomboscsap.onclick = () => {
+                const price = Number(document.getElementById("price3000npfey").innerText);
+                addToCart(price);
+            };
+        }
 
     const checkoutBtn = document.getElementById("checkout");
     if (checkoutBtn) {

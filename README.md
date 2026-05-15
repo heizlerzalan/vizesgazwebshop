@@ -1,5 +1,5 @@
 # vizesgazwebshop
-## main page
+## main page hz
 ## own brand ok
 ## kapcsolatok 
 ## kosár hz
