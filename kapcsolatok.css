@@ -1,5 +1,16 @@
+body{
+    background-color: #88aadd;
+}
 .kep{
     border-radius: 50px;
     border: 3px, black, solid;
-    width: 200px;
+    width: 50%;
+    
+}
+.a{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    text-align: center;
 }
