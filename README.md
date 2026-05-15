@@ -1,6 +1,6 @@
 # vizesgazwebshop
 ## main page hz
 ## own brand ok
-## kapcsolatok 
+## kapcsolatok ko
 ## kosár hz
 ## brand bemutató csd
