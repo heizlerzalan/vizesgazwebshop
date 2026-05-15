@@ -114,29 +114,68 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     }
 
-        const btnHollandi = document.getElementById("hollandibutton");
-        if (btnHollandi) {
-            btnHollandi.onclick = () => {
-                const price = Number(document.getElementById("price3000npfey").innerText);
-                addToCart(price);
-            };
-        }
+    const btnHollandi1 = document.getElementById("hollandibutton1");
+    if (btnHollandi1) {
+        btnHollandi1.onclick = () => {
+            const price = Number(document.getElementById("pricehollandi").innerText);
+            addToCart(price);
+        };
+    }
 
-        const btnTomito = document.getElementById("tomitobutton");
-        if (btnTomito) {
-            btnTomito.onclick = () => {
-                const price = Number(document.getElementById("price3000npfey").innerText);
-                addToCart(price);
-            };
-        }
+    const btnTomito = document.getElementById("tomitobutton");
+    if (btnTomito) {
+        btnTomito.onclick = () => {
+            const price = Number(document.getElementById("pricetomito").innerText);
+            addToCart(price);
+        };
+    }
 
-        const btnGomboscsap = document.getElementById("gomboscsapbutton");
-        if (btnGomboscsap) {
-            btnGomboscsap.onclick = () => {
-                const price = Number(document.getElementById("price3000npfey").innerText);
-                addToCart(price);
-            };
-        }
+    const btnGomboscsap = document.getElementById("gomboscsapbutton");
+    if (btnGomboscsap) {
+        btnGomboscsap.onclick = () => {
+            const price = Number(document.getElementById("pricegomboscsap").innerText);
+            addToCart(price);
+        };
+    }
+    const btnHajduz120 = document.getElementById("hajduz120button");
+    if (btnHajduz120) {
+        btnHajduz120.onclick = () => {
+            const price = Number(document.getElementById("pricehajduz120").innerText);
+            addToCart(price);
+        };
+    }
+
+    const btnHollandi2 = document.getElementById("hollandibutton2");
+    if (btnHollandi2) {
+        btnHollandi2.onclick = () => {
+            const price = Number(document.getElementById("pricehollandi").innerText);
+            addToCart(price);
+        };
+    }
+
+    const btnFogo = document.getElementById("fogo-87button");
+    if (btnFogo) {
+        btnFogo.onclick = () => {
+            const price = Number(document.getElementById("pricefogo87").innerText);
+            addToCart(price);
+        };
+    }
+
+    const btnTeflonszalag = document.getElementById("teflonszalagbutton");
+    if (btnTeflonszalag) {
+        btnTeflonszalag.onclick = () => {
+            const price = Number(document.getElementById("priceteflonszalag").innerText);
+            addToCart(price);
+        };
+    }
+
+    const btnStanley = document.getElementById("stanleycsavarhuzo");
+    if (btnStanley) {
+        btnStanley.onclick = () => {
+            const price = Number(document.getElementById("pricestanley").innerText);
+            addToCart(price);
+        };
+    }
 
     const checkoutBtn = document.getElementById("checkout");
     if (checkoutBtn) {
